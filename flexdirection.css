@@ -1,0 +1,24 @@
+#container{
+     height: 500px;
+     width: 80%;
+     background-color: azure;
+     margin: 10px auto;
+     border: 2px solid black;
+     display: flex;
+     flex-direction: column;
+     justify-content:flex-start;
+     flex-wrap: wrap;
+     /* align-items: baseline; */
+     align-content: flex-start;
+}
+#org {
+      /* flex Shorthand :flex grow|flex shrink|flex basis(original main item size) */
+     flex: 1 1 50px;
+}
+h1{
+     text-align: center;
+}
+#container div{
+     height: 100px;
+     width: 100px;
+}

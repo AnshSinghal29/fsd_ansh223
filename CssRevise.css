@@ -1,0 +1,39 @@
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chart-container.reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: max-content;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  overflow: hidden; 
+  border-radius: 8px;
+}
+
+
+.box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure the image covers the box area without stretching */
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This crops the image to fill the box perfectly */
+  display: block;
+}
+
+/* Individual Colors (Used as fallback if image fails to load) */
+.box1 { background-color: #3498db; }
+.box2 { background-color: #e74c3c; }
+.box3 { background-color: #2ecc71; }
